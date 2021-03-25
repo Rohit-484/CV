@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            G-POST
+        </title>
+        <link rel="icon" href="download.jpg" type="image/gif" sizes="16x16">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+#more {display: none;}
+</style>
+
+        <style>
+        * {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: red;
+   color: white;
+   text-align: center;
+   padding:10px;
+   background-color: maroon;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+            * {
+                box-sizing: border-box;
+            }
+
+            /* CSS property for header section */
+            .header {
+                background-color: maroon;
+                padding: 10px;
+                text-align: center;
+            }
+            .menu {
+              float:left;
+              width:20%;
+              text-align:center;
+            }
+            .menu a {
+              background-color:skyblue;
+              padding:8px;
+              margin-top:7px;
+              display:block;
+              width:100%;
+              color:black;
+            }
+            .nav_menu {
+                overflow: hidden;
+                background-color: #333;
+
+
+            }
+            .nav_menu a {
+                float: right;
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 20px 40px;
+                text-decoration: none;
+            }
+            .nav_menu a:hover {
+                background-color: white;
+                color: green;
+            }
+            h2 {
+                color:green;
+                text-align:center;
+            }
+            * {
+  box-sizing: border-box;
+}
+
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height:900px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column1{
+  float: left;
+  width:21%;
+  padding:10px;
+  margin-left:10px;
+  margin-right:10px;
+  background-color: #97e5ef;
+}
+.column2{
+  float:left;
+  width:55%;
+  padding:10px;
+  background-color:#fff3cd;
+  margin-right:10px;
+}
+.column3{
+   float:left;
+  width:21%;
+  padding:10px;
+  margin-left:10px;
+  margin-right:10px;
+  background-color: #f2a51a;
+}
+
+            /* Media query to set website layout
+            according to screen size */
+            @media screen and (max-width:600px) {
+                .columnA, .columnB, .columnC {
+                    width: 50%;
+                }
+            }
+            @media screen and (max-width:400px) {
+                .columnA, .columnB, .columnC {
+                    width: 100%;
+                }
+            }
+            .main{
+              float:left;
+              width:60%;
+
+            }
+            img1{
+              height:100px;
+              width: 100px
+            }
+        </style>
+    </head>
+
+    <body>
+      <div style="margin:20px">
+        <div class = "header">
+          <img src="download.jpg" alt="">
+            <h1 style = "font-family: Courier; margin:0; color:white;font-size:200%;"> <font size=300%;>G-POST</font> </h1>
+            <p style="color:white; margin:0;">The Galgotias University News Letter</p>
+        </div>
+
+        <!-- nevigation menu of website layout -->
+        <div class = "nav_menu">
+            <a href = "C:\Users\Rohit\Documents\Python Scripts\Web Development\GU\index.html">LOGIN</a>
+            <a href = "#">ACTIVITIES</a>
+            <a href = "#">EVENTS</a>
+            <a href = "C:\Users\Rohit\Documents\Python Scripts\Web Development\GU\contact.html">CONTACT</a>
+
+            <a href = "file:///C:/Users/Rohit/Documents/Python%20Scripts/Web%20Development/GU/about.html">ABOUT</a>
+            <a href = "#">HOME</a>
+
+          </div>
+
+      <div class="row">
+        <div class="column column1 menu"
+
+                <a href="#"></a>
+                <a href="#">Current Events></a>
+                <a href="#">Members </a>
+                <a href="#">Editorials </a>
+                <a href="#">Reports</a>
+
+        </div>
+        <div class="column column2" >
+        <h1></h1>
+        <h1>How this university is keeping its students ahead in the times of COVID-19</h1>
+        <h4>Learning and growth does not stop during the lockdown at Galgotias University where the students and faculty have adapted to a new way of life through innovation.</h4>
+          <details>
+            <img src="image.jpg" alt="Galgotias University">
+            <summary>Read more</summary>
+            <p>s the world and our nation is in the midst of a lockdown and social distancing is the need of the hour, Galgotias University is one of the few universities in India that has easily adapted to the situation through digital transformation and the use of advanced technology. And they set the ball rolling well in advance to ensure there is no impediment to effective online learning and assessment of the students.
+
+Online classes during COVID-19: Calibrated learning
+
+At Galgotias University, post the Covid19 lockdown in India, the faculty continued teaching by way of online classes, assignments and assessment tools. Students forged ahead in online learning capabilities using technologies the university had implemented well ahead of time.
+
+Galgotias University has been using online platforms such as Zoom, Moodle, Google Classroom, Google Hangouts, Skype, Webex, Virtual labs, etc. effectively since several years and had already set a benchmark in the education fraternity. The transition during the time of the lockdown has, therefore, been smooth and effective.
+
+Online seminars and Masterclasses by industry experts are being conducted across courses and students are being exposed to the experts in the industry while sitting at home.
+
+The robust and dynamic learning management system at Galgotias University ensured zero academic loss, increased student engagement, and enhanced learning during the COVID19 crisis.
+
+"Galgotias university has been embracing new technologies since over a decade and our students have always been ahead in terms of learning and adapting to the latest technologies aligned to Industry 4.0, which has resulted in outstanding placements for the university year on year" says Dhruv Galgotia, CEO of Galgotias University.</p>
+      </details>
+      <h1>Dr Tabrez Ahmad, Pro Vice Chancellor & Dean, School of Law, Galgotias University: Prevention is better than Cure from COVID-19</h1>
+    <details>
+      <img src="tabrezA.jpg" alt="Tabrez Ahamad">
+      <summary>Read more</summary>
+      <p>
+It’s challenging to know at early stages when you are infected by the novel coronavirus that causes the COVID-19 disease. There is a most common and rare symptom loss of smell that could signal you must be tested. According to Harvard T.H. Chan School of Public Health epidemiologist Marc Lipsitch, the virus could ultimately infect between 40% and 70% of the population worldwide. Some people might show no symptoms at all but many of those cases would be mild, while the prospect of being infected with a new virus can be devastating. The most symptoms are fever, coughing and shortness of breath. These symptoms usually appear between two days and two weeks of exposure to the virus. Doctors recently added “loss of smell” as a potential symptom that may show up alone without any other symptoms. As the coronavirus outbreak continues to accelerate globally creating serious worry among people. <br> Even after all the protective measure the disease is still fast spreading globally and creating fear and worry in the entire world as till now there is no direct medicine to cure the decrease. Therefore keeping in mind the current situation it is recommended that each person should take proper care about himself and his family and stay at home to save lives.
+
+As the coronavirus outbreak continues to accelerate in the U.S., cleaning supplies are disappearing off the shelves and people are worried about every subway rail, kitchen counter and toilet seat they touch. A new analysis found that the virus can remain viable in the air for up to 3 hours, on copper for up to 4 hours, on cardboard up to 24 hours and on plastic and stainless steel up to 72 hours. This study was originally published in the pre print database medRxiv on March 11, and now a revised version was published March 17 in The New England Journal of Medicine. What’s more, SARS-CoV-2 RNA was found on “a variety of surfaces” in cabins of both symptomatic and asymptomatic people who were infected with COVID-19 on the Diamond Princess cruise ship, up to 17 days after the passengers disembarked, according to a new analysis from the Centers for Disease Control and Prevention (CDC). However, this was before disinfection procedures took place and “data cannot be used to determine whether transmission occurred from contaminated surfaces,” according to the analysis. In other words, it’s not clear if the viral particles on these surfaces could have infected people. Another study published in February in The Journal of Hospital Infection analyzed several dozen previously published papers on human coronaviruses (other than the new coronavirus) to get a better idea of how long they can survive outside of the body
+
+As COVID-19 is an infectious disease and grows faster among the people coming in close contracts. Therefore, the social distancing and self-isolation have come out as the best methods to avoid the fast spread of the disease. Most of the countries adopted the methods of lock-down to avoid the community transmission to control the disease.</p>
+</details>
+           <h1>Online education: This leading university is keeping students ahead!</h1>
+           <h4>At Galgotias University, online seminars and masterclasses by industry experts are being held for different courses. Students are being exposed to more than 15,000+ online lectures, 9,200 e-learning resources, and 4,000+ online assignments while sitting at home.</h4>
+         <details>
+           <img src="g.jpg" alt="Galgotias University">
+           <summary>Read more</summary>
+           <p>The entire world is under a lockdown. Social distancing is the need of the hour. Galgotias University is one of the few universities in India to easily adapt to advanced technologies to ensure effective online learning for its students.</p>
+           <h4>Online classes during Covid-19: Calibrated learning</h4>
+           <p>The university is organizing online seminars and masterclasses by industry experts for different courses. Students are being exposed to the best experts in the industry while sitting at home. <br>The university has been using online platforms such as Zoom, Moodle, Google Classroom, Google Hangouts, Skype, WebEx, and Virtual Labs for the last few years. Post the lockdown, the faculty will continue with its online classes, assignments, and assessments. <br>“Galgotias University has been embracing new technologies for over a decade. Our students have always been ahead in terms of learning and adapting to Industry 4.0 technologies, thereby resulting in outstanding placements year after year,” says Dhruv Galgotia, CEO, Galgotias University. <br> The robust and dynamic learning management system at Galgotias University has ensured that students are constantly engaged during the Covid-19 crisis. <br>  </p>
+       </details>
+        </div>
+        <div class="column column3">
+          <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="a.png" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="g.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="12.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+        </div>
+        <div class="footer">
+    <p>G-POST</p>
+  </div>
+      </div>
+
+      </div>
+
+    </body>
+</html>
